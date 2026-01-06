@@ -113,7 +113,7 @@ export default function HScrollSection() {
 
         <div
           onClick={(e) => handleClick(e.currentTarget, "/project1")}
-          className="img-wrapper relative w-[59vw] h-[60vh] overflow-hidden rounded-[40px] cursor-pointer"
+          className="img-wrapper relative w-[80vw] md:w-[59vw] h-[60vh] overflow-hidden rounded-[40px] cursor-pointer"
         >
           <Image
             src="/images/project-1.png"
@@ -126,12 +126,12 @@ export default function HScrollSection() {
 
       {/* 2 */}
       <section className="skill-set w-screen h-full flex flex-col gap-10 items-center justify-center">
-        <h1 className="text-4xl md:text-6xl text-center">
+        <h1 className="text-3xl md:text-6xl text-center">
           Device Reporting System
         </h1>
         <div
           onClick={(e) => handleClick(e.currentTarget, "/project2")}
-          className="img-wrapper relative w-[63vw] h-[60vh] rounded-[40px] overflow-hidden"
+          className="img-wrapper relative w-[80vw] md:w-[63vw] h-[60vh] rounded-[40px] overflow-hidden"
         >
           <Image
             src="/images/project-2.png"
@@ -146,7 +146,7 @@ export default function HScrollSection() {
         <h1 className="text-4xl md:text-6xl text-center">AutoCAD 3D Design</h1>
         <div
           onClick={(e) => handleClick(e.currentTarget, "/project3")}
-          className="img-wrapper relative w-[65.5vw] h-[60vh]  rounded-[40px] overflow-hidden"
+          className="img-wrapper relative w-[80vw] md:w-[65.5vw] h-[60vh]  rounded-[40px] overflow-hidden"
         >
           <Image
             src="/images/project-3.png"
@@ -163,7 +163,7 @@ export default function HScrollSection() {
         </h1>
         <div
           onClick={(e) => handleClick(e.currentTarget, "/project4")}
-          className="img-wrapper relative w-[63.5vw] h-[60vh]  rounded-[40px] overflow-hidden"
+          className="img-wrapper relative w-[80vw] md:w-[63.5vw] h-[60vh]  rounded-[40px] overflow-hidden"
         >
           <Image
             src="/images/project-4.png"
