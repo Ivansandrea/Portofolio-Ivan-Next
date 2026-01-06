@@ -99,7 +99,7 @@ export default function About() {
           About Me
         </h1>
         </motion.div>
-        <div className=" lg:flex gap-32">
+        <div className="lg:flex gap-32">
           <div
             ref={box}
             className="mx-auto relative flex items-center justify-center w-[200px] h-[200px] lg:w-[600px] lg:h-[400px]"
@@ -114,7 +114,7 @@ export default function About() {
 
           <p
             ref={textRef}
-            className="mt-10 md:mt-0 text-lg md:text-2xl flex flex-wrap items-center justify-center md:justify-start text-center md:text-left tracking-wider max-w-4xl leading-relaxed"
+            className="mt-10 md:mt-0 text-lg md:text-2xl flex flex-wrap items-center justify-center lg:justify-start text-center md:text-left tracking-wider max-w-4xl leading-relaxed"
           >
             {"I'm Ivan Sandrea, a web developer specializing in website development using PHP, Laravel, SQL, and Tailwind CSS. I'm experienced in building dynamic websites with clean, responsive, and user-friendly code structures. I'm constantly developing my skills and am open to learning new technologies in the web development field."
               .split(" ")
