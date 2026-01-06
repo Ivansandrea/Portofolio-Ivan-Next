@@ -32,7 +32,7 @@ export default function Hero() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="flex flex-col gap-20 sm:gap-10 text-center z-3 0"
+        className="flex flex-col gap-10 sm:gap-10 text-center z-30"
       >
         <motion.div variants={item}>
           <ParallaxText distance={100} className="text-2xl sm:text-5xl">
@@ -75,13 +75,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="transform -translate-y-40"
+          className="transform -translate-y-28"
         >
           <Image
             src="/images/RobotImg.png"
             alt="3D Preview"
-            width={320}
-            height={320}
+            width={280}
+            height={280}
             priority
             className="object-contain"
           />
