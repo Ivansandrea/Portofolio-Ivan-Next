@@ -70,7 +70,7 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="md:hidden absolute transform -translate-y-40 inset-0 z-20 flex justify-center items-center pointer-events-none overflow-hidden select-none">
+      <div className="md:hidden absolute -top-40 inset-0 z-20 flex justify-center items-center pointer-events-none overflow-hidden select-none">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
