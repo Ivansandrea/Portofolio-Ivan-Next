@@ -57,7 +57,7 @@ export default function Contact() {
     <main
       ref={containerRef}
       id="contact"
-      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between gap-5 px-5 md:px-20 py-20"
+      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-5 md:px-20 py-20"
     >
       {/* MAP */}
       <div ref={mapRef}>
@@ -69,14 +69,14 @@ export default function Contact() {
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="rounded-xl w-fit"
+          className="rounded-xl w-[350px] h-[300px] md:w-[500px] md:h-[400px] lg:w-[600px] lg:h-[450px]"
         />
       </div>
 
       {/* FORM */}
       <form
         ref={formRef}
-        className="flex flex-col mx-auto max-w-3xl h-fit gap-5 border-x-2 rounded-full px-13 py-9 shadow-2xl shadow-white/20"
+        className="flex flex-col mx-auto max-w-3xl h-fit gap-5 border-x-2 rounded-full px-13 py-9 md:px-28 md:py-20 shadow-2xl shadow-white/20"
       >
         <h2 className="text-3xl text-center">Contact Me</h2>
 
