@@ -5,20 +5,6 @@ dibangun dengan **Next.js & Tailwind CSS**.
 
 ---
 
-## 📸 Preview
-![Preview Website](./public/preview.png)
-
----
-
-## ✨ Fitur
-- Responsive (Mobile & Desktop)
-- Dark mode
-- Animasi halus (Framer Motion)
-- Project showcase
-- Fast loading & SEO friendly
-
----
-
 ## 🛠️ Tech Stack
 - Next.js (App Router)
 - Tailwind CSS
@@ -28,11 +14,5 @@ dibangun dengan **Next.js & Tailwind CSS**.
 ---
 
 ## 🌐 Live Demo
-👉 https://my-porto.vercel.app
+👉 [https://my-porto.vercel.app](https://portofolio-ivan-next.vercel.app/)
 
----
-
-## ⚙️ Installation
-```bash
-npm install
-npm run dev
