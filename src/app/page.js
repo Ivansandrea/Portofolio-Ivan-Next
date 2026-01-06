@@ -18,11 +18,11 @@ export default function Home() {
             alt="Gradient-img"
             width={800}
             height={600}
-            className="pointer-events-none absolute top-0 right-0 opacity-60 -z-10"
+            className="pointer-events-none absolute top-0 right-0 opacity-60 z-10"
           />
         </div>
 
-        <div className="pointer-events-none h-0 w-[700px] absolute top-[30%] right-0 shadow-[0_0_900px_30px_white] -rotate-45 -z-10"></div>
+        <div className="pointer-events-none h-0 w-[700px] absolute top-[30%] right-0 shadow-[0_0_900px_30px_white] -rotate-45 z-10"></div>
         <Hero />
         <About />
         <HScrollSection />
