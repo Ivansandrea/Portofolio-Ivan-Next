@@ -51,6 +51,11 @@ export default function Hero() {
             <ParallaxText distance={100} className="text-xl">
               I love creating modern, responsive, and user-friendly websites.
             </ParallaxText>
+            <ParallaxText distance={100} className="relative top-20">
+              <div className="text-sm  animate-bounce">
+                <p>❕use desktop💻 for better experience❕</p>
+              </div>
+            </ParallaxText>
           </div>
         </motion.div>
       </motion.div>
