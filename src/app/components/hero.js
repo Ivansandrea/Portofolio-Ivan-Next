@@ -1,0 +1,75 @@
+
+import ParallaxText from "./parallaxText";
+import Spline from "@splinetool/react-spline";
+import { delay, motion } from "framer-motion";
+
+
+export default function Hero() {
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.5,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+  return (
+    <main className="relative min-h-screen p-10 sm:p-20 items-center flex flex-col-reverse md:flex-row justify-between overflow-x-hidden">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="flex flex-col gap-20 sm:gap-10 text-center z-20"
+      >
+        <motion.div variants={item}>
+          <ParallaxText distance={100} className="text-2xl sm:text-5xl">
+            Heloo, Im Ivan Sandrea
+          </ParallaxText>
+        </motion.div>
+
+        <motion.div variants={item}>
+          <div className="flex flex-col gap-5 sm:gap-3">
+            <ParallaxText distance={100} className="text-xl">
+              A Web Developer with a focus on{" "}
+              <span className="text-red-500">Laravel</span> &{" "}
+              <span className="text-blue-500">Tailwind CSS</span>.
+            </ParallaxText>
+
+            <ParallaxText distance={100} className="text-xl">
+              I love creating modern, responsive, and user-friendly websites.
+            </ParallaxText>
+          </div>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 1.2,
+          ease: [0.22, 1, 0.36, 1],
+          delay: 0.8,
+        }}
+        className="absolute md:top-0 inset-0 flex justify-center items-center pointer-events-none overflow-hidden select-none"
+      >
+        <Spline
+          className="w-[700px] h-[700px] lg:w-[900px] lg:h-[900px] -translate-y-32 md:translate-y-0 translate-x-0 lg:translate-x-[25%] transform scale-100 md:scale-115"
+          scene="https://prod.spline.design/URNsG61-ZP7Is3BA/scene.splinecode?v=3"
+        />
+      </motion.div>
+    </main>
+  );
+}
