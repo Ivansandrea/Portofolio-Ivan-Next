@@ -27,21 +27,21 @@ export default function Hero() {
   };
 
   return (
-    <main className="relative min-h-screen p-10 sm:p-20 items-center flex flex-col-reverse md:flex-row justify-between overflow-x-hidden">
+    <main className="relative min-h-screen p-10 sm:p-20 items-center flex flex-col-reverse lg:flex-row justify-between overflow-x-hidden">
       <motion.div
         variants={container}
         initial="hidden"
         animate="show"
-        className="flex flex-col gap-10 sm:gap-10 text-center z-30"
+        className="relative md:top-20 lg:top-auto flex flex-col gap-10 sm:gap-10 text-center z-30"
       >
         <motion.div variants={item}>
-          <ParallaxText distance={100} className="text-2xl sm:text-5xl">
+          <ParallaxText distance={100} className="lg:text-start text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             Heloo, Im Ivan Sandrea
           </ParallaxText>
         </motion.div>
 
         <motion.div variants={item}>
-          <div className="flex flex-col gap-5 sm:gap-3">
+          <div className="flex lg:text-start flex-col gap-5 sm:gap-3">
             <ParallaxText distance={100} className="text-xl">
               A Web Developer with a focus on{" "}
               <span className="text-red-500">Laravel</span> &{" "}
@@ -51,7 +51,7 @@ export default function Hero() {
             <ParallaxText distance={100} className="text-xl">
               I love creating modern, responsive, and user-friendly websites.
             </ParallaxText>
-            <ParallaxText distance={100} className="relative top-20">
+            <ParallaxText distance={100} className="relative top-20 block md:hidden text-center">
               <div className="text-sm  animate-bounce">
                 <p>❕use desktop💻 for better experience❕</p>
               </div>

@@ -57,7 +57,7 @@ export default function Contact() {
     <main
       ref={containerRef}
       id="contact"
-      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-5 md:px-20 py-20"
+      className="min-h-screen flex flex-col-reverse md:flex-row gap-10 items-center justify-center px-5 md:px-30 py-20"
     >
       {/* MAP */}
       <div ref={mapRef}>
