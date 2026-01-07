@@ -85,8 +85,8 @@ export default function Hero() {
           <Image
             src="/images/RobotImg.png"
             alt="3D Preview"
-            width={280}
-            height={280}
+            width={250}
+            height={250}
             priority
             className="object-contain"
           />
