@@ -32,7 +32,7 @@ export default function Hero() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative top-24 lg:top-auto flex flex-col gap-10 sm:gap-10 text-center z-30"
+        className="relative top-20 lg:top-auto flex flex-col gap-10 sm:gap-10 text-center z-30"
       >
         <motion.div variants={item}>
           <ParallaxText distance={100} className="lg:text-start text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
